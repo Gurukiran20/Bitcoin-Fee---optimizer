@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Fee Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bitcoin Fee Optimizer </h1>
+    <form id="feeForm">
+      <div class="form-group">
+        <label for="transactionSize">Transaction Size (in bytes)</label>
+        <input type="number" id="transactionSize" required>
+      </div>
+      <div class="form-group">
+        <label for="urgency">Priority Level</label>
+        <select id="urgency">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <button type="submit">Get Fee Recommendation</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <p>Recommended Fee: <span id="optimizedFee"></span> satoshis/byte</p>
+    </div>
+
+    <div id="error" class="error hidden">
+      <p>Error: <span id="errorMessage"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
