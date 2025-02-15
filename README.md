@@ -12,16 +12,6 @@ An interactive web app that provides optimized Bitcoin transaction fee recommend
 - **API:** Mempool.space API (`https://mempool.space/api/v1/fees/recommended`) for real-time Bitcoin fee recommendations  
 
 
-## 📦 Installation
-```bash
-# Clone the repository
-git clone https://github.com/Gurukiran20/Bitcoin-Fee---optimizer.git
+## 📦 How to Use
+Open `index.html` in your browser to run the app.
 
-# Navigate to the project directory
-cd Bitcoin-Fee---optimizer
-
-# Install dependencies (example for Python/Flask)
-pip install -r requirements.txt
-
-# Run the application
-python app.py
